@@ -12,8 +12,24 @@ export default createStore({
   },
   actions: {
     async fetchUsers({ commit }) {
-      const response = await apiProvider.getUsers();
-      commit('setUsers', response.data.results);
+      const dailyResponse = await apiProvider.getDailyRanking();
+      const weeklyResponse = await apiProvider.getWeeklyRanking();
+      const monthlyResponse = await apiProvider.getMonthlyRanking();
+
+      const dailyResults = dailyResponse.data.results;
+      const weeklyResults = weeklyResponse.data.results;
+      const monthlyResults = monthlyResponse.data.results;
+
+      const users = dailyResults.map((user, index) => {
+        return {
+          ...user,
+          daily_avg: user.avg_steps,
+          weekly_avg: weeklyResults[index].avg_steps,
+          monthly_avg: monthlyResults[index].avg_steps,
+        };
+      });
+
+      commit('setUsers', users);
     },
   },
   getters: {
