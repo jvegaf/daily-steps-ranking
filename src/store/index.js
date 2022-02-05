@@ -31,8 +31,31 @@ export default createStore({
 
       commit('setUsers', users);
     },
+
+    async fetchUser({ commit, state }, userId) {
+      const users = [...state.users];
+      const user = users.find(u => {
+        return u.id === userId;
+      });
+      if (user.workouts !== undefined) return;
+
+      const response = await apiProvider.getUserWorkouts(user.username);
+      const workouts = response.data.results;
+
+      const usersUpdated = this.state.users.map(u => {
+        if (u.id === userId) {
+          u.workouts = workouts;
+        }
+        return u;
+      });
+
+      commit('setUsers', usersUpdated);
+    },
   },
   getters: {
     users: state => state.users,
+    getUser: state => id => {
+      return state.users.find(u => u.id === id);
+    },
   },
 });

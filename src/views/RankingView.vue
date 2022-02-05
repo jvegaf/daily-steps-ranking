@@ -8,6 +8,7 @@
           :monthly="user.monthly_avg"
           :daily="user.daily_avg"
           @click="showUser(user.id)"
+          v-bind:style="{ cursor: 'pointer' }"
         />
       </div>
     </div>
@@ -32,7 +33,8 @@ export default {
   },
   methods: {
     showUser(id) {
-      this.$router.push(`/users/${id}`);
+      this.$store.dispatch('fetchUser', id);
+      this.$router.push({ name: 'User', params: { id } });
     },
   },
 };

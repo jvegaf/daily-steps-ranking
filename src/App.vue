@@ -1,7 +1,6 @@
 <template>
   <div id="nav" class="d-flex justify-content-center gap-2">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link>
   </div>
   <router-view />
 </template>
