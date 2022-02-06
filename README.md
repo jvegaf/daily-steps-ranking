@@ -13,7 +13,7 @@
 </br>
 
 <p align="center">
-  <img src="./doc/screenshots/rankings_mobile.png" width="400" >
+  <img src="./doc/screenshots/rankings_mobile.png" width="300" >
 </p>
 
 </br>
@@ -24,10 +24,8 @@
 
 ![t3](./doc/screenshots/user_desktop.png)
 
-</br>
-
 <p align="center">
-  <img src="./doc/screenshots/user_mobile.png" width="400" >
+  <img src="./doc/screenshots/user_mobile.png" width="300" >
 </p>
 
 </br>
