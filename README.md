@@ -1,5 +1,33 @@
 # daily-steps-ranking
 
+
+## Screenshots
+
+</br>
+
+### Rankings
+</br>
+
+![t1](./doc/screenshots/rankings_desktop.png)
+
+</br>
+
+![t2](./doc/screenshots/rankings_mobile.png)
+
+</br>
+
+## User
+
+</br>
+
+![t3](./doc/screenshots/user_desktop.png)
+
+</br>
+
+![t4](./doc/screenshots/user_mobile.png)
+
+</br>
+
 ## Project setup
 ```
 npm install
