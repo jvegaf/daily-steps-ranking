@@ -16,7 +16,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  background-color: #f4f7fc;
 }
 .view {
   padding-top: 80px;
@@ -27,5 +26,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f4f7fc;
+  }
 }
 </style>
