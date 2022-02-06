@@ -12,7 +12,9 @@
 
 </br>
 
-![t2](./doc/screenshots/rankings_mobile.png)
+<p align="center">
+  <img src="./doc/screenshots/rankings_mobile.png" width="400" >
+</p>
 
 </br>
 
@@ -24,7 +26,9 @@
 
 </br>
 
-![t4](./doc/screenshots/user_mobile.png)
+<p align="center">
+  <img src="./doc/screenshots/user_mobile.png" width="400" >
+</p>
 
 </br>
 
