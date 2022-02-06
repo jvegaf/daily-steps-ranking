@@ -1,9 +1,14 @@
 <template>
-  <div id="nav" class="d-flex justify-content-center gap-2">
-    <router-link to="/">Home</router-link>
-  </div>
-  <router-view />
+  <app-header></app-header>
+  <router-view class="view" />
 </template>
+
+<script>
+import AppHeader from '@/components/AppHeader.vue';
+export default {
+  components: { AppHeader },
+};
+</script>
 
 <style>
 #app {
@@ -11,18 +16,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  background-color: #f4f7fc;
+}
+.view {
+  padding-top: 80px;
 }
 
-#nav {
-  padding: 2rem;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.spinner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

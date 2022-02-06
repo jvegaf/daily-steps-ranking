@@ -1,0 +1,378 @@
+{
+    "sourceFile": "src/components/AppHeader.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 90,
+            "patches": [
+                {
+                    "date": 1644097274117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644097288231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      \n+      <router-link \n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644097297908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link \n+      <router-link to=\"/\"\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644097309132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link to=\"/\"\n+      <router-link to=\"/\" class=\"\"></router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644097316010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link to=\"/\" class=\"\"></router-link>\n+      <router-link to=\"/\" class=\"\">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644097842160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n-    <div class=\"container\">\n+    <div class=\"container row\">\n       <router-link to=\"/\" class=\"\">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098470180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container row\">\n-      <router-link to=\"/\" class=\"\">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098594617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container row\">\n+      <router-link to=\"/\"  <a href=\"#\" class=\"nav-link text-secondary\">\n+                <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n+                Home\n+              </a>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098599924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container row\">\n-      <router-link to=\"/\"  <a href=\"#\" class=\"nav-link text-secondary\">\n+      <router-link to=\"/\" class=\"nav-link text-secondary\">\n                 <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n                 Home\n-              </a>\n+              </>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098611250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <div class=\"container row\">\n       <router-link to=\"/\" class=\"nav-link text-secondary\">\n                 <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n                 Home\n-              </>\n+              <router-link/>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098627871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <div class=\"container row\">\n       <router-link to=\"/\" class=\"nav-link text-secondary\">\n                 <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n                 Home\n-              <router-link/>\n+      <router-link/>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098633253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container row\">\n       <router-link to=\"/\" class=\"nav-link text-secondary\">\n-                <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n+          <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n                 Home\n       <router-link/>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644098666501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container row\">\n       <router-link to=\"/\" class=\"nav-link text-secondary\">\n-          <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n-                Home\n+          <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"></svg>\n+            Home\n       <router-link/>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098675390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n-    <div class=\"container row\">\n+    <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-secondary\">\n           <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"></svg>\n             Home\n       <router-link/>\n"
+                },
+                {
+                    "date": 1644098698406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-secondary\">\n-          <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"></svg>\n-            Home\n-      <router-link/>\n+        <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"></svg>\n+        Home\n+      </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098721636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link to=\"/\" class=\"nav-link text-secondary\">\n+      <router-link to=\"/\" class=\"nav-link text-white\">\n         <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"></svg>\n         Home\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n"
+                },
+                {
+                    "date": 1644098743178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n-        <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"></svg>\n+        <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n         Home\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644098769608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n-        <svg class=\"bi d-block mx-auto mb-1\" width=\"24\" height=\"24\"><use xlink:href=\"#home\"/></svg>\n-        Home\n+        <span class=\"glyphicon glyphicon-align-left\" aria-hidden=\"true\"></span>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098844948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n-        <span class=\"glyphicon glyphicon-align-left\" aria-hidden=\"true\"></span>\n+        <i class=\"bi bi-arrow-left\"></i>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098875021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n-        <i class=\"bi bi-arrow-left\"></i>\n+        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-arrow-left\" viewBox=\"0 0 16 16\">\n+  <path fill-rule=\"evenodd\" d=\"M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z\"/>\n+</svg>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098903896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,21 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n-        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-arrow-left\" viewBox=\"0 0 16 16\">\n-  <path fill-rule=\"evenodd\" d=\"M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z\"/>\n-</svg>\n+        <svg\n+          xmlns=\"http://www.w3.org/2000/svg\"\n+          width=\"24\"\n+          height=\"24\"\n+          fill=\"currentColor\"\n+          class=\"bi bi-arrow-left\"\n+          viewBox=\"0 0 24 24\"\n+        >\n+          <path\n+            fill-rule=\"evenodd\"\n+            d=\"M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z\"\n+          />\n+        </svg>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098918216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,13 @@\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n         <svg\n           xmlns=\"http://www.w3.org/2000/svg\"\n-          width=\"24\"\n-          height=\"24\"\n+          width=\"32\"\n+          height=\"32\"\n           fill=\"currentColor\"\n           class=\"bi bi-arrow-left\"\n-          viewBox=\"0 0 24 24\"\n+          viewBox=\"0 0 32 32\"\n         >\n           <path\n             fill-rule=\"evenodd\"\n             d=\"M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z\"\n"
+                },
+                {
+                    "date": 1644098937593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n-        <svg\n-          xmlns=\"http://www.w3.org/2000/svg\"\n-          width=\"32\"\n-          height=\"32\"\n-          fill=\"currentColor\"\n-          class=\"bi bi-arrow-left\"\n-          viewBox=\"0 0 32 32\"\n-        >\n-          <path\n-            fill-rule=\"evenodd\"\n-            d=\"M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z\"\n-          />\n-        </svg>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098944169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <router-link to=\"/\" class=\"nav-link text-white\">\n+        <i class=\"fa fa-home\"></i>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098962475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,10 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n+      <div>\n+        \n+      </div>\n       <router-link to=\"/\" class=\"nav-link text-white\">\n         <i class=\"fa fa-home\"></i>\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n"
+                },
+                {
+                    "date": 1644098978212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n-        \n+        <i class=\"fa fa-home\"></i>\n+        <router-link to=\"/\" class=\"nav-link text-white\"> </router-link>\n       </div>\n-      <router-link to=\"/\" class=\"nav-link text-white\">\n-        <i class=\"fa fa-home\"></i>\n-      </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644098988296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n         <i class=\"fa fa-home\"></i>\n-        <router-link to=\"/\" class=\"nav-link text-white\"> </router-link>\n+        <router-link to=\"/\" class=\"nav-link text-white\"></router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644098998040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n-        <i class=\"fa fa-home\"></i>\n-        <router-link to=\"/\" class=\"nav-link text-white\"></router-link>\n+        <router-link to=\"/\">\n+          <i class=\"fa fa-home\"></i>\n+        </router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644099205923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n-        <router-link to=\"/\">\n-          <i class=\"fa fa-home\"></i>\n+        <router-link to=\"/\" class=\"navc\">\n         </router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644099212079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n-        <router-link to=\"/\" class=\"navc\">\n+        <router-link to=\"/\" class=\"nav-link\">\n         </router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644099225524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n-        <router-link to=\"/\" class=\"nav-link\">\n-        </router-link>\n+        <router-link to=\"/\" class=\"nav-link\"></router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644099234342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div>\n-        <router-link to=\"/\" class=\"nav-link\"></router-link>\n+        <router-link to=\"/\" class=\"nav-link\">Back</router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644099244125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n+        <router-link to=\"/\" class=\"nav-link\">Back</router-link>\n       <div>\n-        <router-link to=\"/\" class=\"nav-link\">Back</router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n"
+                },
+                {
+                    "date": 1644099250705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-        <router-link to=\"/\" class=\"nav-link\">Back</router-link>\n-      <div>\n-      </div>\n+      <router-link to=\"/\" class=\"nav-link\">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644099259574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link to=\"/\" class=\"nav-link\">Back</router-link>\n+      <router-link to=\"/\" class=\"nav-link \">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644099272981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link to=\"/\" class=\"nav-link \">Back</router-link>\n+      <router-link to=\"/\" class=\"nav-link text-light\">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644099328019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n+    const \n     return { title };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099342882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const \n+    const isRoot = \n     return { title };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099362297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const isRoot = \n+    const isRoot = computed(() => title)\n     return { title };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099371413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const isRoot = computed(() => title)\n+    const isRoot = title\n     return { title };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099379109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const isRoot = title\n+    const isRoot = title === 'Home';\n     return { title };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099390721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const isRoot = title === 'Home';\n+    const isRoot = title === 'Rankings' ? true : false;\n     return { title };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099400278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n     const isRoot = title === 'Rankings' ? true : false;\n-    return { title };\n+    return { title, isRoot };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099418423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link to=\"/\" class=\"nav-link text-light\">Back</router-link>\n+      <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\">Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644099430135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\">Back</router-link>\n+      <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\"\n+        >Back</router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644099439976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\"\n-        >Back</router-link>\n+      <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\">\n+        Back\n+      </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644099463760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <div class=\"container\">\n       <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n-      <div class=\"navbar-brand\">{{ title }}</div>\n+      <div class=\"navbar-brand align-self-end\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n \n"
+                },
+                {
+                    "date": 1644099480554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <div class=\"container\">\n       <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n-      <div class=\"navbar-brand align-self-end\">{{ title }}</div>\n+      <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n \n"
+                },
+                {
+                    "date": 1644099505075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const isRoot = title === 'Rankings' ? true : false;\n+    const showBack = title === 'Rankings' ? true : false;\n     return { title, isRoot };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099513015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = title === 'Rankings' ? true : false;\n+    const showBack = title === 'Rankings' ? false : true;\n     return { title, isRoot };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099522082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link v-if=\"isRoot\" to=\"/\" class=\"nav-link text-light\">\n+      <router-link v-if=\"showBacko=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n@@ -16,8 +16,8 @@\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n     const showBack = title === 'Rankings' ? false : true;\n-    return { title, isRoot };\n+    return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099538570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <router-link v-if=\"showBacko=\"/\" class=\"nav-link text-light\">\n+      <router-link v-if=\"showBack\" to=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644099855591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = title === 'Rankings' ? false : true;\n+    const showBack = computed(() => store.getters.getShowBack);\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099870866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,15 @@\n   </nav>\n </template>\n \n <script>\n-import { computed } from '@vue/runtime-core';\n+import { computed, reactive } from '@vue/runtime-core';\n import { useStore } from 'vuex';\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = computed(() => store.getters.getShowBack);\n+    const showBack = reac\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099878434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = reac\n+    const showBack = const name = reactive({\n+      count: 0\n+    })\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099894354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = const name = reactive({\n-      count: 0\n-    })\n+    const showBack = computed(() => store.getters.getShowBack);\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099919876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = computed(() => store.getters.getShowBack);\n+    const showBack = computed(() => {\n+      return title === 'Rankings';\n+    });\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644099927314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   </nav>\n </template>\n \n <script>\n-import { computed, reactive } from '@vue/runtime-core';\n+import { computed } from '@vue/runtime-core';\n import { useStore } from 'vuex';\n export default {\n   setup() {\n     const store = useStore();\n"
+                },
+                {
+                    "date": 1644099964452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n+      <div v-if=\n       <router-link v-if=\"showBack\" to=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n"
+                },
+                {
+                    "date": 1644099973826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div v-if=\n-      <router-link v-if=\"showBack\" to=\"/\" class=\"nav-link text-light\">\n+      <router-link to=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644099983795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <div v-if=\n+      <div v-if=\"showBack\">\n       <router-link to=\"/\" class=\"nav-link text-light\">\n         Back\n       </router-link>\n+\n+      </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644100025061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,9 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n       <div v-if=\"showBack\">\n-      <router-link to=\"/\" class=\"nav-link text-light\">\n-        Back\n-      </router-link>\n-\n+        <router-link to=\"/\" class=\"nav-link text-light\"> Back </router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n@@ -19,9 +16,9 @@\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n     const showBack = computed(() => {\n-      return title === 'Rankings';\n+      return title !== 'Rankings';\n     });\n     return { title, showBack };\n   },\n };\n"
+                },
+                {
+                    "date": 1644100044560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = computed(() => {\n+    const showBack = reactive(() => {\n       return title !== 'Rankings';\n     });\n     return { title, showBack };\n   },\n"
+                },
+                {
+                    "date": 1644100052281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,12 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = reactive(() => {\n-      return title !== 'Rankings';\n+    const showBack = reactive({\n+      showBack: false,\n     });\n+    });\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100058625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n     const title = computed(() => store.getters.getHeaderTitle);\n     const showBack = reactive({\n       showBack: false,\n     });\n-    });\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100065537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     const title = computed(() => store.getters.getHeaderTitle);\n     const showBack = reactive({\n       showBack: false,\n     });\n+    });\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100080509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = reactive({\n-      showBack: false,\n-    });\n-    });\n+    const showBack = computed()\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100093489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = computed()\n+    const showBack = computed(() => title !== 'Rankings');\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100127403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = computed(() => title !== 'Rankings');\n+    const showBack = computed(() => {\n+      title !== 'Rankings'});\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100138687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n     const showBack = computed(() => {\n-      title !== 'Rankings'});\n+      return title !== 'Rankings';\n+    });\n     return { title, showBack };\n   },\n };\n </script>\n"
+                },
+                {
+                    "date": 1644100153506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = computed(() => {\n+    const showBack = reactive(() => {\n       return title !== 'Rankings';\n     });\n     return { title, showBack };\n   },\n"
+                },
+                {
+                    "date": 1644100161670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   </nav>\n </template>\n \n <script>\n-import { computed } from '@vue/runtime-core';\n+import { computed, reactive } from '@vue/runtime-core';\n import { useStore } from 'vuex';\n export default {\n   setup() {\n     const store = useStore();\n"
+                },
+                {
+                    "date": 1644100470552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n export default {\n   setup() {\n     const store = useStore();\n     const title = computed(() => store.getters.getHeaderTitle);\n-    const showBack = reactive(() => {\n+    const showBack = computed(() => {\n       return title !== 'Rankings';\n     });\n     return { title, showBack };\n   },\n"
+                },
+                {
+                    "date": 1644100492360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <div v-if=\"showBack\">\n+      <div v-show=\"showBack\">\n         <router-link to=\"/\" class=\"nav-link text-light\"> Back </router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n \n <script>\n-import { computed, reactive } from '@vue/runtime-core';\n+import { computed } from '@vue/runtime-core';\n import { useStore } from 'vuex';\n export default {\n   setup() {\n     const store = useStore();\n"
+                },
+                {
+                    "date": 1644100536319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <div v-show=\"showBack\">\n+      <div v-if=\"showBack\">\n         <router-link to=\"/\" class=\"nav-link text-light\"> Back </router-link>\n       </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n"
+                },
+                {
+                    "date": 1644100557034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n     <div class=\"container\">\n-      <div v-if=\"showBack\">\n-        <router-link to=\"/\" class=\"nav-link text-light\"> Back </router-link>\n-      </div>\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644100564186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n-    <div class=\"container\">\n+    <div class=\"container flex-end\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644100576111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n-    <div class=\"container flex-end\">\n+    <div class=\"container d-flex flex-end\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644100592178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n-    <div class=\"container d-flex flex-end\">\n+    <div class=\"d-flex\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n"
+                },
+                {
+                    "date": 1644100598125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n+      <div class=\"navbar-brand\">{{ title }}</div>\n     <div class=\"d-flex\">\n-      <div class=\"navbar-brand\">{{ title }}</div>\n     </div>\n   </nav>\n </template>\n \n"
+                },
+                {
+                    "date": 1644100605334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n-    <div class=\"d-flex\">\n-    </div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644100612471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n+  <nav class=\"navbar navbar-dark bg-primary fixed-top flex-end\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n   </nav>\n </template>\n \n"
+                },
+                {
+                    "date": 1644100625353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <nav class=\"navbar navbar-dark bg-primary fixed-top flex-end\">\n+  <nav class=\"navbar navbar-dark bg-primary fixed-top d-flex flex-end\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n   </nav>\n </template>\n \n"
+                },
+                {
+                    "date": 1644100642793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <nav class=\"navbar navbar-dark bg-primary fixed-top d-flex flex-end\">\n+  <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n       <div class=\"navbar-brand\">{{ title }}</div>\n   </nav>\n </template>\n \n"
+                },
+                {
+                    "date": 1644100702506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-      <div class=\"navbar-brand\">{{ title }}</div>\n+    <div class=\"navbar-brand\">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644100709753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-    <div class=\"navbar-brand\">{{ title }}</div>\n+    <div class=\"navbar-brand \">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644100717317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-    <div class=\"navbar-brand \">{{ title }}</div>\n+    <div class=\"navbar-brand fs-bolder\">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644100727122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-    <div class=\"navbar-brand fs-bolder\">{{ title }}</div>\n+    <div class=\"navbar-brand fw-bolder\">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644100738412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-    <div class=\"navbar-brand fw-bolder\">{{ title }}</div>\n+    <div class=\"navbar-brand fs-3 fw-bolder\">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644165561526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-    <div class=\"navbar-brand fs-3 fw-bolder\">{{ title }}</div>\n+    <div class=\"navbar-brand fw-bolder\">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1644165574818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <nav class=\"navbar navbar-dark bg-primary fixed-top justify-content-center\">\n-    <div class=\"navbar-brand fw-bolder\">{{ title }}</div>\n+    <div class=\"navbar-brand fs-4 fw-bolder\">{{ title }}</div>\n   </nav>\n </template>\n \n <script>\n"
+                }
+            ],
+            "date": 1644097274117,
+            "name": "Commit-0",
+            "content": "<template>\n  <nav class=\"navbar navbar-dark bg-primary fixed-top\">\n    <div class=\"container\">\n      \n      <div class=\"navbar-brand\">{{ title }}</div>\n    </div>\n  </nav>\n</template>\n\n<script>\nimport { computed } from '@vue/runtime-core';\nimport { useStore } from 'vuex';\nexport default {\n  setup() {\n    const store = useStore();\n    const title = computed(() => store.getters.getHeaderTitle);\n    return { title };\n  },\n};\n</script>\n"
+        }
+    ]
+}

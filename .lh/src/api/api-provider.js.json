@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/api/api-provider.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1644117843031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1644117869323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { handleResponse, handleError } from './response';\n \n const BASE_URL = 'https://step-meter-pp4publmdq-ez.a.run.app';\n const API_SECRET = process.env.VUE_APP_API_SECRET;\n-const LIMIT = 30;\n+const LIMIT = 100;\n const TODAY = UtilDate.today();\n const WEEK_AGO = UtilDate.weekAgo();\n const MONTH_AGO = UtilDate.monthAgo();\n \n"
+                }
+            ],
+            "date": 1644117843031,
+            "name": "Commit-0",
+            "content": "import axios from 'axios';\nimport { UtilDate } from '../util/utilDate';\nimport { handleResponse, handleError } from './response';\n\nconst BASE_URL = 'https://step-meter-pp4publmdq-ez.a.run.app';\nconst API_SECRET = process.env.VUE_APP_API_SECRET;\nconst LIMIT = 30;\nconst TODAY = UtilDate.today();\nconst WEEK_AGO = UtilDate.weekAgo();\nconst MONTH_AGO = UtilDate.monthAgo();\n\nconst getDailyRanking = () => {\n  axios.defaults.headers.common.Authorization = API_SECRET;\n  axios.defaults.headers.common['Content-Type'] = 'application/json';\n  return axios\n    .get(`${BASE_URL}/users/?limit=${LIMIT}`)\n    .then(handleResponse)\n    .catch(handleError);\n};\n\nconst getWeeklyRanking = () => {\n  axios.defaults.headers.common.Authorization = API_SECRET;\n  axios.defaults.headers.common['Content-Type'] = 'application/json';\n  return axios\n    .get(\n      `${BASE_URL}/users/?workouts_from=${WEEK_AGO}&workouts_to=${TODAY}&limit=${LIMIT}`\n    )\n    .then(handleResponse)\n    .catch(handleError);\n};\n\nconst getMonthlyRanking = () => {\n  axios.defaults.headers.common.Authorization = API_SECRET;\n  axios.defaults.headers.common['Content-Type'] = 'application/json';\n  return axios\n    .get(\n      `${BASE_URL}/users/?workouts_from=${MONTH_AGO}&workouts_to=${TODAY}&limit=${LIMIT}`\n    )\n    .then(handleResponse)\n    .catch(handleError);\n};\n\nconst getUserWorkouts = username => {\n  axios.defaults.headers.common.Authorization = API_SECRET;\n  axios.defaults.headers.common['Content-Type'] = 'application/json';\n  return axios\n    .get(`${BASE_URL}/${username}/workouts/?limit=${LIMIT}`)\n    .then(handleResponse)\n    .catch(handleError);\n};\n\nexport const apiProvider = {\n  getDailyRanking,\n  getWeeklyRanking,\n  getMonthlyRanking,\n  getUserWorkouts,\n};\n"
+        }
+    ]
+}

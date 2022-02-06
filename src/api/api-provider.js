@@ -4,7 +4,7 @@ import { handleResponse, handleError } from './response';
 
 const BASE_URL = 'https://step-meter-pp4publmdq-ez.a.run.app';
 const API_SECRET = process.env.VUE_APP_API_SECRET;
-const LIMIT = 30;
+const LIMIT = 100;
 const TODAY = UtilDate.today();
 const WEEK_AGO = UtilDate.weekAgo();
 const MONTH_AGO = UtilDate.monthAgo();
