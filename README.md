@@ -23,6 +23,7 @@
 
 <p align="center">
   <img src="./doc/screenshots/rankings_mobile.png" width="300" >
+  <img src="./doc/screenshots/rankings_mobile_dark.png" width="300" >
 </p>
 
 </br>
@@ -35,6 +36,7 @@
 
 <p align="center">
   <img src="./doc/screenshots/user_mobile.png" width="300" >
+  <img src="./doc/screenshots/user_mobile_dark.png" width="300" >
 </p>
 
 </br>
